@@ -1,26 +1,48 @@
-*.log
-.DS_Store
+
+# Laravel & PHP
+/vendor/
+/node_modules/
+/bootstrap/cache/
+/storage/framework/cache/*
+/storage/framework/views/*
+/storage/framework/sessions/*
+/storage/*.key
+/storage/pail
+/public/storage
+/public/hot
+/public/build
+/compiled.php
+
+# Environment
 .env
+.env.*.local
 .env.backup
 .env.production
-.phpactor.json
-.phpunit.result.cache
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE & Editor
 /.fleet
 /.idea
 /.nova
-/.phpunit.cache
 /.vscode
 /.zed
-/auth.json
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/storage/pail
-/vendor
-Homestead.json
-Homestead.yaml
-npm-debug.log
+.phpunit.cache
+.phpunit.result.cache
+.phpactor.json
+
+# System
+.DS_Store
 Thumbs.db
-yarn-error.log
+
+# Composer
+/auth.json
+/composer.lock
+!composer.lock  # Remove if you want to commit lock file
+
+# Testing
+/coverage
